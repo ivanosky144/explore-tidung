@@ -14,15 +14,16 @@ const Navbar = () => {
     culinary: ["Sate Tidung", "Ikan Bakar", "Es Kelapa"],
     history: ["Museum Sejarah", "Rumah Tradisional"],
     article: ["Tips Wisata", "Panduan Kuliner"],
+    map: [],
   }
 
   return (
     <div className="py-5 px-7 flex items-center justify-between relative">
-      <h1 className="font-bold text-2xl flex-1 flex gap-1 font-playfair items-center text-green">
+      <h1 className="font-bold text-2xl flex-1 flex gap-1 font-playfair items-center text-green cursor-pointer" onClick={() => router.push("/")}>
         <GiIsland className="text-green-500"/>   
-        Explore Tidung
+        <p className="text-dark_green">Explore Tidung</p>
         </h1>
-      <div className="flex gap-3 flex=4 relative">
+      <div className="flex gap-3 flex=4 relative text-dark_green">
         <div
           className="relative"
           onMouseEnter={() => setHoveredItem("destinations")}
@@ -30,16 +31,16 @@ const Navbar = () => {
         >
           <p
             className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
-            onClick={() => router.push("/destinations")}
+            onClick={() => router.push("/places")}
           >
-            Tempat Wisata
+            TEMPAT WISATA
           </p>
           {hoveredItem === "destinations" && (
             <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
               {menuOptions.destinations.map((item, index) => (
                 <p
                   key={index}
-                  className="cursor-pointer hover:bg-gray-200 rounded-md p-2 transition w-[100%]"
+                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
                   onClick={() => alert(`Navigate to ${item}`)}
                 >
                   {item}
@@ -58,14 +59,14 @@ const Navbar = () => {
             className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
             onClick={() => router.push("/culinary")}
           >
-            Kuliner
+            KULINER
           </p>
           {hoveredItem === "culinary" && (
             <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
               {menuOptions.culinary.map((item, index) => (
                 <p
                   key={index}
-                  className="cursor-pointer hover:bg-gray-200 rounded-md p-2 transition"
+                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
                   onClick={() => alert(`Navigate to ${item}`)}
                 >
                   {item}
@@ -84,14 +85,14 @@ const Navbar = () => {
             className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
             onClick={() => router.push("/history")}
           >
-            Sejarah
+            SEJARAH
           </p>
           {hoveredItem === "history" && (
             <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
               {menuOptions.history.map((item, index) => (
                 <p
                   key={index}
-                  className="cursor-pointer hover:bg-gray-200 rounded-md p-2 transition"
+                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
                   onClick={() => alert(`Navigate to ${item}`)}
                 >
                   {item}
@@ -103,6 +104,18 @@ const Navbar = () => {
 
         <div
           className="relative"
+          onMouseEnter={() => setHoveredItem("map")}
+          onMouseLeave={() => setHoveredItem(null)}
+        >
+          <p
+            className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
+            onClick={() => router.push("/map")}
+          >
+            PETA
+          </p>
+        </div>
+        <div
+          className="relative"
           onMouseEnter={() => setHoveredItem("article")}
           onMouseLeave={() => setHoveredItem(null)}
         >
@@ -110,14 +123,14 @@ const Navbar = () => {
             className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
             onClick={() => router.push("/article")}
           >
-            Artikel
+            ARTIKEL
           </p>
           {hoveredItem === "article" && (
             <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
               {menuOptions.article.map((item, index) => (
                 <p
                   key={index}
-                  className="cursor-pointer hover:bg-gray-200 rounded-md p-2 transition"
+                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
                   onClick={() => alert(`Navigate to ${item}`)}
                 >
                   {item}
@@ -130,12 +143,12 @@ const Navbar = () => {
 
       <div className="flex-1 flex justify-end items-center gap-5">
         <button
-          className="font-bold rounded-xl p-2 bg-gray-300"
+          className="font-bold rounded-xl p-2 bg-dark_green text-lime_yellow"
           onClick={() => setLanguage(language === "Indonesia" ? "English" : "Indonesia")}
         >
           {language === "Indonesia" ? "ENG" : "INA"}
         </button>
-        <FaSearch className="text-xl" />
+        <FaSearch className="text-xl text-dark_green" />
       </div>
     </div>
   )

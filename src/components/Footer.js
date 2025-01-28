@@ -5,36 +5,38 @@ import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="p-20 bg-white">
-        <div className="flex gap-10">
-            <div className="flex flex-col">
+    <div className="p-32 bg-white shadow-lg bg-dark_green text-lime_yellow">
+        <div className="flex gap-10 w-full justify-between">
+            <div className="flex gap-24">
                 <div className="flex flex-col">
-                    <h5>Explore</h5>
-                    <h3>Tidung</h3>
+                    <div className="flex flex-col font-bold">
+                        <h5>Explore</h5>
+                        <h3 className="text-3xl">Tidung</h3>
+                    </div>
+                    <p className="font-semibold">@2025</p>
                 </div>
-                <p>@2025</p>
+                <div className="flex flex-col gap-4">
+                    <h3 className="font-bold">JELAJAHI PULAU TIDUNG</h3>
+                    <ul className="flex flex-col gap-2">
+                        <li className="text-sm font-semibold"><a href="/places">Tempat Wisata</a></li>
+                        <li className="text-sm font-semibold"><a href="/culinary">Kuliner Khas Tidung</a></li>
+                        <li className="text-sm font-semibold"><a href="/article">Artikel Pilihan</a></li>
+                        <li className="text-sm font-semibold"><a href="/history">Sejarah Pulau Tidung</a></li>
+                        <li className="text-sm font-semibold"><a href="/safety">Tips Aman Berwisata</a></li>                
+                    </ul>
+                </div>
             </div>
             <div className="flex flex-col">
-                <h3>JELAJAHI PULAU TIDUNG</h3>
-                <ul>
-                    <li><a href="/places">Tempat Wisata</a></li>
-                    <li><a href="/culinary">Kuliner Khas Tidung</a></li>
-                    <li><a href="/article">Artikel Pilihan</a></li>
-                    <li><a href="/history">Sejarah Pulau Tidung</a></li>
-                    <li><a href="/safety">Tips Aman Berwisata</a></li>                
-                </ul>
-            </div>
-            <div className="flex flex-col">
-                <h4>Follow kami</h4>
+                <h4 className="font-semibold">Follow kami</h4>
                 <div className="flex gap-4">
                     <a href="">
-                        <FaSquareInstagram />
+                        <FaSquareInstagram className="text-lg"/>
                     </a>
                     <a href="">
-                        <FaFacebookSquare />
+                        <FaFacebookSquare className="text-lg"/>
                     </a>
                     <a href="">
-                        <FaYoutube />
+                        <FaYoutube className="text-lg"/>
                     </a>
                 </div>
             </div>
