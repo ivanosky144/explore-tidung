@@ -26,6 +26,14 @@ export default function Culinary() {
           ))}
         </div>
       </div>
+      <h2 className="text-6xl font-extrabold flex justify-center">BOOKLET KULINER PULAU TIDUNG</h2>
+      <div className="relative w-full flex justify-center items-center">
+        <iframe 
+          src="/assets/Boost Bisnis Lokal.pdf" 
+          className="w-full max-w-3xl h-[700px] border rounded-lg shadow-lg"
+        >
+        </iframe>
+      </div>
       <div>
         <div className="flex flex-col gap-3">
           <h2 className="text-6xl font-extrabold">TEMUKAN RESTORAN DI PULAU TIDUNG</h2>

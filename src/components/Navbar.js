@@ -10,7 +10,20 @@ const Navbar = () => {
   const [hoveredItem, setHoveredItem] = useState(null)
 
   const menuOptions = {
-    destinations: ["Jembatan Cinta", "Saung Sunset", "Pulau Payung"],
+    destinations: [
+      {
+        slug: "jembatan-cinta",
+        name: "Jembatan Cinta"
+      },
+      {
+        slug: "saung-sunset",
+        name: "Saung Sunset"
+      },
+      {
+        slug: "pulau-payung",
+        name: "Pulau Payung"
+      },
+    ],
     culinary: ["Sate Tidung", "Ikan Bakar", "Es Kelapa"],
     history: ["Museum Sejarah", "Rumah Tradisional"],
     article: ["Tips Wisata", "Panduan Kuliner"],
@@ -18,10 +31,10 @@ const Navbar = () => {
   }
 
   return (
-    <div className="py-5 px-7 flex items-center justify-between relative">
+    <div className="py-5 px-7 flex items-center justify-between relative z-99">
       <h1 className="font-bold text-2xl flex-1 flex gap-1 font-playfair items-center text-green cursor-pointer" onClick={() => router.push("/")}>
         <GiIsland className="text-green-500"/>   
-        <p className="text-dark_green">Explore Tidung</p>
+        <p className="text-dark_green">Discover Tidung</p>
         </h1>
       <div className="flex gap-3 flex=4 relative text-dark_green">
         <div
@@ -41,9 +54,9 @@ const Navbar = () => {
                 <p
                   key={index}
                   className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
-                  onClick={() => alert(`Navigate to ${item}`)}
+                  onClick={() => router.push(`/places/${item.slug}`)}
                 >
-                  {item}
+                  {item.name}
                 </p>
               ))}
             </div>

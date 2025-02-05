@@ -10,7 +10,7 @@ export default function MyApp({ Component, pageProps }) {
     return (
         <>
             <Head>
-                <title>Explore Tidung</title>
+                <title>Discover Tidung</title>
             </Head>
             <main className={inter.className}>
                 <Component {...pageProps} />
