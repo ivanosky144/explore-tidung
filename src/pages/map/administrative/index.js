@@ -1,0 +1,15 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+
+export default function index() {
+  return (
+    <>
+        <Navbar />
+        <div className="px-36 py-12">
+          <h2 className="text-6xl font-extrabold">PETA BATAS ADMINISTRASI PULAU TIDUNG</h2>
+          <img src="/assets/hasan_map.jpeg" alt="Tidung Map" className="rounded-md mt-2" />
+        </div>
+        <Footer/>    
+    </>
+  );
+}

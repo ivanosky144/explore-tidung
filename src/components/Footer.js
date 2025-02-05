@@ -1,19 +1,18 @@
-import Image from "next/image";
 import { FaSquareInstagram } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <div className="p-32 bg-white shadow-lg bg-dark_green text-lime_yellow">
+    <div className="p-32 bg-white shadow-lg bg-green-800 text-lime_yellow">
         <div className="flex gap-10 w-full justify-between">
             <div className="flex gap-24">
                 <div className="flex flex-col">
                     <div className="flex flex-col font-bold">
-                        <h5>Explore</h5>
+                        <h5>Eksplor</h5>
                         <h3 className="text-3xl">Tidung</h3>
                     </div>
-                    <p className="font-semibold">@2025</p>
+                    <p className="font-semibold">2024 © KKN PPM UGM - Mendayung Seribu</p>
                 </div>
                 <div className="flex flex-col gap-4">
                     <h3 className="font-bold">JELAJAHI PULAU TIDUNG</h3>

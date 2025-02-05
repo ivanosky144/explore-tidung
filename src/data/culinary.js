@@ -7,7 +7,7 @@ export const culinary = [
     {
         name: "KUE BANGKIT",
         description: "Dibuat dengan bahan sederhana seperti tepung terigu, parutan kelapa, telur, gula, dan sedikit sentuhan pasta, kue bangkit menawarkan rasa manis gurih yang sulit dilupakan.",
-        photo: "/assets/kuebangkit.jpg"
+        photo: "/assets/kue-bangkit.png"
     },
     {
         name: "OTAK-OTAK",
@@ -17,12 +17,7 @@ export const culinary = [
     {
         name: "SUKUN",
         description: "Dengan lahan yang luas dan asri, Pulau Payung menghadirkan sumber daya sukun yang melimpah, yang diolah menjadi beragam sajian lezat seperti keripik sukun yang renyah, sukun susu yang lembut, hingga gorengan sukun yang selalu menggoda selera.",
-        photo: "/assets/sukun.jpg"
-    },
-    {
-        name: "IKAN BAKAR",
-        description: "Ikan segar yang dibakar dengan bumbu khas Pulau Tidung, menghasilkan rasa gurih dan sedikit pedas yang memanjakan lidah.",
-        photo: "/assets/ikan-bakar.jpg"
+        photo: "/assets/keripik-sukun.jpg"
     }
 ];
 

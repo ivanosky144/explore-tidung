@@ -16,27 +16,39 @@ const Navbar = () => {
         name: "Jembatan Cinta"
       },
       {
-        slug: "saung-sunset",
-        name: "Saung Sunset"
+        slug: "panah-asmara",
+        name: "Panah Asmara"
       },
       {
         slug: "pulau-payung",
         name: "Pulau Payung"
       },
     ],
-    culinary: ["Sate Tidung", "Ikan Bakar", "Es Kelapa"],
-    history: ["Museum Sejarah", "Rumah Tradisional"],
-    article: ["Tips Wisata", "Panduan Kuliner"],
-    map: [],
+    history: ["Makam Raja Tidung", "Tradisi & Kearifan Lokal"],
+    article: ["Your Gateway to Paradise in Kepulauan Seribu", "Panduan Kuliner"],
+    map: ["Pembagian Wilayah Pulau Tidung", "Peta Batas Administrasi"],
   }
 
   return (
-    <div className="py-5 px-7 flex items-center justify-between relative z-99">
+    <div className="py-5 px-7 md:flex items-center justify-between relative z-99 fixed top-0 left-0">
       <h1 className="font-bold text-2xl flex-1 flex gap-1 font-playfair items-center text-green cursor-pointer" onClick={() => router.push("/")}>
         <GiIsland className="text-green-500"/>   
-        <p className="text-dark_green">Discover Tidung</p>
+        <p className="text-dark_green">Eksplor Tidung</p>
         </h1>
       <div className="flex gap-3 flex=4 relative text-dark_green">
+
+      <div
+          className="relative"
+          onMouseEnter={() => setHoveredItem("destinations")}
+          onMouseLeave={() => setHoveredItem(null)}
+        >
+          <p
+            className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
+            onClick={() => router.push("/")}
+          >
+            PROFIL
+          </p>
+        </div>
         <div
           className="relative"
           onMouseEnter={() => setHoveredItem("destinations")}
@@ -74,19 +86,6 @@ const Navbar = () => {
           >
             KULINER
           </p>
-          {hoveredItem === "culinary" && (
-            <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
-              {menuOptions.culinary.map((item, index) => (
-                <p
-                  key={index}
-                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
-                  onClick={() => alert(`Navigate to ${item}`)}
-                >
-                  {item}
-                </p>
-              ))}
-            </div>
-          )}
         </div>
 
         <div
@@ -98,7 +97,7 @@ const Navbar = () => {
             className="font-bold p-3 rounded-xl hover:bg-gray-200 transition duration-300 ease-in-out cursor-pointer"
             onClick={() => router.push("/history")}
           >
-            SEJARAH
+            BUDAYA DAN SEJARAH
           </p>
           {hoveredItem === "history" && (
             <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
@@ -126,6 +125,19 @@ const Navbar = () => {
           >
             PETA
           </p>
+          {hoveredItem === "map" && (
+            <div className="absolute top-14 left-0 bg-white shadow-lg rounded-lg w-48">
+              {menuOptions.map.map((item, index) => (
+                <p
+                  key={index}
+                  className="cursor-pointer hover:bg-gray-200 rounded-md p-3 transition w-[100%] text-sm font-semibold"
+                  onClick={() => alert(`Navigate to ${item}`)}
+                >
+                  {item}
+                </p>
+              ))}
+            </div>
+          )}
         </div>
         <div
           className="relative"

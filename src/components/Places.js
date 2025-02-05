@@ -17,7 +17,7 @@ export default function Places() {
           />
           <div className="absolute inset-0 flex items-end px-5 py-10 gap-5">
             <p
-              className="text-white font-extrabold text-2xl"
+              className="text-white font-extrabold text-4xl"
               style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', transform: 'scaleY(1.23' }}
             >
               JEMBATAN CINTA
@@ -32,7 +32,7 @@ export default function Places() {
           />
           <div className="absolute inset-0 flex items-end px-5 py-10 gap-5">
             <p
-              className="text-white font-extrabold text-2xl"
+              className="text-white font-extrabold text-4xl"
               style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', transform: 'scaleY(1.23' }}
             >
               PANAH ASMARA
@@ -47,7 +47,7 @@ export default function Places() {
           />
           <div className="absolute inset-0 flex items-end px-5 py-10 gap-5">
             <p
-              className="text-white font-extrabold text-2xl"
+              className="text-white font-extrabold text-4xl"
               style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', transform: 'scaleY(1.23' }}
             >
               PULAU PAYUNG

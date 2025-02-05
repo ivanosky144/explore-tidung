@@ -17,6 +17,15 @@ export default function index() {
               </p>
             </div>
           </div>
+          <div className="gap-20 p-20">
+            <div className="flex justify-between mt-32 flex-col md:flex-row gap-10">
+              <img src="/assets/makam-pulau-tidung.jpeg" className="rounded-sm shadow-md w-[650px] h-[500px]"/>
+              <div className="flex flex-col gap-8 items-start pl-24 flex-end justify-center">
+                <h2 className="font-extrabold text-6xl" style={{ transform: 'scaleY(1.1)'}}>MENYELAMI PULAU TIDUNG KECIL</h2>
+                <p className="text-xl">Saat ini, sekitar 2,5 hektar dari total luas daratan Pulau Tidung Kecil dimanfaatkan untuk pengembangan agrowisata. Berbagai jenis tanaman, penangkaran penyu, budidaya ikan, serta keberadaan museum menjadi daya tarik wisata yang khas di pulau ini.</p>
+              </div>
+            </div>
+          </div>
           <div className="flex flex-col gap-12 p-20">
             <h2 className="text-5xl font-extrabold">WAHANA YANG BISA DICOBA DI JEMBATAN CINTA</h2>
             <div className="flex flex-col gap-5">
@@ -29,19 +38,13 @@ export default function index() {
               <div className="rounded-lg bg-dark_green p-8 shadow-md flex gap-15">
                 <div className="flex flex-col gap-5">
                   <h3 className="font-extrabold text-2xl text-lime_yellow">Donuts Boat</h3>
-                  <p className="text-lime_yellow">erahu berbentuk bulat seperti kue donat ini bisa diikuti 1 hingga 3 orang. Agar dapat bertahan lama tanpa terjatuh dari donut boat, anda harus berpegangan kencang di kedua pegangan untuk menahan tubuh. Semakin lama anda bertahan akan semakin seru.</p>
+                  <p className="text-lime_yellow">Perahu berbentuk bulat seperti kue donat ini bisa diikuti 1 hingga 3 orang. Agar dapat bertahan lama tanpa terjatuh dari donut boat, anda harus berpegangan kencang di kedua pegangan untuk menahan tubuh. Semakin lama anda bertahan akan semakin seru.</p>
                 </div>
               </div>
               <div className="rounded-lg bg-dark_green p-8 shadow-md flex gap-15">
                 <div className="flex flex-col gap-5">
                   <h3 className="font-extrabold text-2xl text-lime_yellow">Canoe</h3>
                   <p className="text-lime_yellow">Adalah sampan kecil yang bisa diisi oleh 2 orang penumpang, keduanya akan diberi pengayuh dengan 2 bilah mata kayuh. Kita bisa menggunakan Canoe atau Kano untuk berputar mengitari area sekitar Jembatan Cinta dengan santai..</p>
-                </div>
-              </div>
-              <div className="rounded-lg bg-dark_green p-8 shadow-md flex gap-15">
-                <div className="flex flex-col gap-5">
-                  <h3 className="font-extrabold text-2xl text-lime_yellow">Banana Boat</h3>
-                  <p className="text-lime_yellow">Bentuk dan warnanya yang kuning seperti pisang membuatnya di panggil dengan banana boat. Ditumpangi oleh 5 penumpang dan ditarik dengan kecepatan tinggi membuat sang banana boat kadang melompat ketika bertemu dengan gelombang kecil. Terbalik ketika melakukan manufer adalah yang paling menyenangkan ketika mengikuti aktivitas ini.</p>
                 </div>
               </div>
               <div className="rounded-lg bg-dark_green p-8 shadow-md flex gap-15">

@@ -1,6 +1,6 @@
 import { culinary, restaurants } from "@/data/culinary";
-import Image from "next/image";
 import { useState } from "react";
+import HTMLFlipBook from "react-pageflip";
 
 export default function Culinary() {
 
@@ -20,7 +20,7 @@ export default function Culinary() {
               <img src={item.photo} className="w-[500px] rounded-md"/>
               <div className="flex flex-col justify-start w-full gap-2">
                 <p className="text-3xl font-extrabold" style={{ transform: 'scaleY(1.1)' }}>{item.name}</p>
-                <p style={{ transform: 'scaleX(1.05)' }} className="ml-5">{item.description}</p>
+                <p className="text-lg">{item.description}</p>
               </div>
             </div>
           ))}
@@ -39,7 +39,7 @@ export default function Culinary() {
           <h2 className="text-6xl font-extrabold">TEMUKAN RESTORAN DI PULAU TIDUNG</h2>
           <p className="text-xl">Sedang mencari hidangan laut segar, kafe tepi pantai yang nyaman, atau mungkin camilan lokal yang lezat? Pulau Tidung memiliki semuanya!</p>
         </div>
-        <div className="grid grid-cols-4 gap-5">
+        <div className="grid grid-cols-4 gap-5 mt-3">
             {restaurants?.map((item, index) => (
               <div className="border-2 border-gray-100 rounded-md hover:border-black shadow-sm">
                 <img src={item.photo} className="w-full h-[200px]"/>
