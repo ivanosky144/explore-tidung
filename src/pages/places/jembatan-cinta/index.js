@@ -7,7 +7,7 @@ export default function index() {
         <Navbar />
         <div className="flex flex-col gap-20">
           <div className="relative w-[100%] h-[20%]">
-            <video src="/assets/jembatan-cinta-video.mp4"  className="w-full h-full object-cover" muted autoPlay onEnded={(e) => e.target.play()}/>
+          <img src="/assets/jembatan-cintaHD.jpg" className="w-full h-full object-cover"/>
             <div className="absolute inset-0 flex flex-col items-start justify-center px-20 py-10 gap-10">
               <p className="text-white font-extrabold text-7xl w-[50%]" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)' }}>
                 JEMBATAN SUNSET & PULAU TIDUNG KECIL
