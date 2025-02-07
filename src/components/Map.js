@@ -1,8 +1,12 @@
+import { Router, useRouter } from "next/router";
 import { useState } from "react";
+import { FaChevronRight } from "react-icons/fa";
+
 
 export default function Map() {
 
   const [activeRegion, setActiveRegion] = useState();
+  const router = useRouter();
 
   return (
     <div className="w-[100%] relative">
@@ -43,29 +47,34 @@ export default function Map() {
           onClick={() => setActiveRegion("rw4")} 
         />
       </svg>
-      <div className="absolute bottom-[700px] left-1/2 transform -translate-x-1/2 bg-dark_green rounded-xl shadow-lg p-3 text-lime_yellow">
+      <div className="absolute right-24 md:top-[40px] top-[700px] flex items-center hover:bg-gray-50 rounded-md p-2 gap-5 cursor-pointer" onClick={() =>router.push("/map/administrative")}>
+        <h1 className="font-semibold">Peta Batas Administrasi</h1>
+        <FaChevronRight />
+      </div>
+      <h1 className="absolute left-12 top-[40px] text-4xl font-bold">PEMBAGIAN WILAYAH PULAU TIDUNG</h1>
+      <div className="absolute md:bottom-[700px] bottom-[850px] left-1/2 transform -translate-x-1/2 bg-dark_green rounded-xl shadow-lg p-3 text-lime_yellow">
         {activeRegion === "rw1" ? (
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-3xl">RW 1</h2>
-            <p>RW 01 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            <h2 className="font-bold md:text-3xl text-xl">RW 1</h2>
+            <p className="text-sm">RW 01 Pulau Tidung menyimpan sejuta potensi menarik.
             </p>
           </div>
         ) : activeRegion === "rw2" ? (
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-3xl">RW 2</h2>
-            <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            <h2 className="font-bold md:text-3xl text-xl">RW 2</h2>
+            <p className="text-sm ">RW 02 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 02 dengan klik link berikut: 
             </p>
           </div>
         ) : activeRegion === "rw3" ? (
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-3xl">RW 3</h2>
-            <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            <h2 className="font-bold md:text-3xl text-xl">RW 3</h2>
+            <p className="text-sm">RW 03 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 03 dengan klik link berikut: 
             </p>
           </div>
         ) : (
           <div className="flex flex-col gap-3">
-            <h2 className="font-bold text-3xl">RW 4</h2>
-            <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            <h2 className="font-bold md:text-3xl text-xl">RW 4</h2>
+            <p className="text-sm">RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
             </p>
           </div>
         )}
