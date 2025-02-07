@@ -10,8 +10,8 @@
         return (
             <>
                 <Head>
-                    <title>Discover Tidung</title>
-                    <link rel="icon" href="/assets/icon.png"/>
+                    <title>Eksplor Tidung</title>
+                    <link rel="icon" href="/assets/eksplortidung-logo.png"/>
                 </Head>
                 <main className={inter.className}>
                     <Component {...pageProps} />

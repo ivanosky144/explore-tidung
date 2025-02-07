@@ -28,11 +28,11 @@ export default function index() {
             </button>
           </div>
         </div>
-        <div className="py-16 px-28 flex flex-col gap-5">
+        <div className="py-16 md:px-28 flex flex-col gap-5 px-12">
           <div>
             <h2 className="text-4xl font-extrabold" style={{ transform: 'scaleY(1.1)'}}>EKSPLOR PULAU TIDUNG</h2>
             <div className="flex justify-between mb-2">
-              <p className="text-xl my-2">Pilih tempat wisata favoritmu</p>
+              <p className="md:text-xl my-2 text-md">Pilih tempat wisata favoritmu</p>
               <div className="justify-between flex gap-2 items-center">
                 <p className="text-md relative after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-black after:left-0 after:bottom-0 after:transition-all after:duration-300 hover:after:w-full cursor-pointer" onClick={() => router.push("/places")}>
                 LIHAT SEMUA
@@ -42,12 +42,12 @@ export default function index() {
             </div>
           </div>
           <div className="flex gap-10 flex-col">
-            <div className="flex justify-between md:flex-row flex-col md:gap-9">
-              <div className="flex-2 flex flex-col gap-2">
-              <div className="group relative overflow-hidden rounded-xl cursor-pointer h-96">
+            <div className="flex justify-between md:flex-row flex-col md:gap-9 gap-12">
+              <div className="flex-2 flex flex-col md:gap-2 gap-3">
+              <div className="group relative overflow-hidden rounded-xl cursor-pointer md:h-[600px] h-[300px]">
                 <img
                   src="/assets/jembatan-cintaHD.jpg"
-                  className="h-[600px] w-[800px] transition-transform duration-300 group-hover:scale-110 shadow-md"
+                  className="md:h-[600px] md:w-[800px] transition-transform duration-300 group-hover:scale-110 shadow-md h-[300px] rounded-xl"
                 />
               </div>
                 <h3 className="font-extrabold text-3xl">JEMBATAN CINTA</h3>
@@ -59,10 +59,10 @@ export default function index() {
                 </div>             
               </div>  
               <div className="flex-5 flex flex-col gap-2">
-                <div className="group relative overflow-hidden rounded-sm cursor-pointer h-96 rounded-xl">
+                <div className="group relative overflow-hidden rounded-xl cursor-pointer md:h-[600px] h-[300px]">
                   <img
                     src="/assets/pulau-payungHD3.jpeg"
-                    className="rounded-xl h-[600px] w-[800px] transition-transform duration-300 group-hover:scale-110 shadow-md"
+                    className="md:h-[600px] md:w-[800px] transition-transform duration-300 group-hover:scale-110 shadow-md h-[300px] rounded-xl"
                   />
                 </div>
                 <h3 className="font-extrabold text-3xl">PULAU PAYUNG</h3>
@@ -89,11 +89,11 @@ export default function index() {
           </div>
           <div className="flex flex-col gap-10">
             {article?.map((item, index) => (
-              <div className="flex gap-8 p-2 rounded-xl hover:border hover:border-gray-200 hover:border-2 hover:shadow-md cursor-pointer" key={index}>
+              <div className="flex gap-8 p-2 rounded-xl md:flex-row flex-col hover:border items-center hover:border-gray-200 hover:border-2 hover:shadow-md cursor-pointer" key={index}>
                 <img src={item?.photo} className="w-[400px] rounded-xl shadow-md"/>
-                <div className="flex flex-col gap-2 justify-center">
+                <div className="flex flex-col gap-2 justify-center md:p-2 p-1">
                   <h2 className="font-bold text-2xl">{item?.title}</h2>
-                  <p className="text-lime_yellow font-semibold bg-dark_green rounded-xl p-2 text-center w-[15%]">{item?.theme}</p>
+                  <p className="text-lime_yellow font-semibold bg-dark_green rounded-xl p-2 text-center md:w-[15%] w-[35%]">{item?.theme}</p>
                   <p>
                   {item?.content?.split(" ").length > 50 
                     ? item.content.split(" ").slice(0, 50).join(" ") + "... " 
@@ -106,15 +106,15 @@ export default function index() {
 
           </div>
           <div className="flex justify-between mt-32 flex-col md:flex-row gap-10">
-            <img src="/assets/makam-pulau-tidung.jpeg" className="rounded-lg shadow-md w-[650px] h-[500px]"/>
-            <div className="flex flex-col gap-8 items-start pl-24 flex-end justify-center">
-              <h2 className="font-extrabold text-6xl" style={{ transform: 'scaleY(1.1)'}}>MENYELAMI SEJARAH DAN BUDAYA PULAU TIDUNG</h2>
+            <img src="/assets/makam-pulau-tidung.jpeg" className="rounded-lg shadow-md md:w-[650px] md:h-[500px] h-[300px]"/>
+            <div className="flex flex-col gap-12 items-start flex-end justify-center">
+              <h2 className="font-extrabold md:text-6xl text-2xl" style={{ transform: 'scaleY(1.1)'}}>MENYELAMI SEJARAH DAN BUDAYA PULAU TIDUNG</h2>
               <p className="text-xl">Pulau Tidung tidak hanya tentang keindahan alam; pulau ini juga kaya akan sejarah. Pelajari lebih dalam tentang masa lalu Pulau Tidung, termasuk warisan budaya, situs bersejarah, dan bagaimana pulau ini menjadi destinasi wisata favorit di Indonesia.</p>
               <a href="/history" className="p-4 font-semibold border-4 rounded-md border-black bg-white hover:bg-black hover:text-white text-md">PELAJARI LEBIH LANJUT</a>
             </div>
           </div>
         </div>
-        <div className="relative w-[100%] h-[15%]">
+        <div className="relative w-[100%] h-[15%] md:block hidden">
           <img src="/assets/article-photo1.jpeg" className="w-full h-full object-cover opacity-70" />
           <div className="absolute inset-0 bg-[#3D5D6C] opacity-50"></div>
           <form className="absolute inset-0 flex flex-col items-start justify-center px-20 py-10 gap-10">

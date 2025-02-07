@@ -6,10 +6,10 @@ export default function Places() {
   const router = useRouter();
 
   return (
-    <div className="p-36">
+    <div className="md:p-36 p-12">
       <h2 className="text-6xl font-extrabold">TEMPAT WISATA DI PULAU TIDUNG</h2>
-      <div className="flex justify-between mt-20">
-        <div className="relative w-[500px] h-[620px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/jembatan-cinta")}>
+      <div className="flex gap-10 mt-20 md:flex-row flex-col">
+        <div className="relative  md:w-[500px] md:h-[620px] h-[480px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/jembatan-cinta")}>
           <img
             src="/assets/jembatan-cintaHD2.jpg"
             className="w-full h-auto object-cover rounded-md"
@@ -24,7 +24,7 @@ export default function Places() {
             </p>
           </div>
         </div>
-        <div className="relative w-[500px] h-[620px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/saung-sunset")}>
+        <div className="relative md:w-[500px] md:h-[620px] h-[480px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/saung-sunset")}>
           <img
             src="/assets/sunset-tree.jpg"
             className="w-full h-auto object-cover rounded-md"
@@ -39,7 +39,7 @@ export default function Places() {
             </p>
           </div>
         </div>
-        <div className="relative w-[500px] h-[620px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/pulau-payung")}>
+        <div className="relative md:w-[500px] md:h-[620px] h-[480px] overflow-hidden hover:opacity-90 cursor-pointer" onClick={() => router.push("/places/pulau-payung")}>
           <img
             src="/assets/pulau-payungHD3.jpeg"
             className="w-full h-auto object-cover rounded-md"

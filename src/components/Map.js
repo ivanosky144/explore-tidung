@@ -45,22 +45,25 @@ export default function Map() {
       </svg>
       <div className="absolute bottom-[700px] left-1/2 transform -translate-x-1/2 bg-dark_green rounded-xl shadow-lg p-3 text-lime_yellow">
         {activeRegion === "rw1" ? (
-          <div>
+          <div className="flex flex-col gap-3">
             <h2 className="font-bold text-3xl">RW 1</h2>
-            <p></p>
+            <p>RW 01 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            </p>
           </div>
         ) : activeRegion === "rw2" ? (
-          <div>
+          <div className="flex flex-col gap-3">
             <h2 className="font-bold text-3xl">RW 2</h2>
-            <p></p>
+            <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            </p>
           </div>
         ) : activeRegion === "rw3" ? (
-          <div>
+          <div className="flex flex-col gap-3">
             <h2 className="font-bold text-3xl">RW 3</h2>
-            <p></p>
+            <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
+            </p>
           </div>
         ) : (
-          <div>
+          <div className="flex flex-col gap-3">
             <h2 className="font-bold text-3xl">RW 4</h2>
             <p>RW 04 Pulau Tidung menyimpan sejuta potensi menarik. Telusuri Potensi Daerah RW 04 dengan klik link berikut: <span className="bg-white p-1 font-semibold text-black rounded-md">https://arcg.is/1XbbDX2</span> Wilayah RW 04 nggak hanya di Pulau Tidung loh! Tapi juga termasuk Pulau Payung.
             </p>

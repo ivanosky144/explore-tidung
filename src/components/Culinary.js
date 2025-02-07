@@ -4,7 +4,7 @@ export default function Culinary() {
 
 
   return (
-    <div className="p-36 flex flex-col gap-24">
+    <div className="md:p-36 flex flex-col gap-24 p-12">
       <div>
         <div className="flex flex-col gap-3">
           <h2 className="text-6xl font-extrabold">DESTINASI KULINER PULAU TIDUNG</h2>
@@ -12,7 +12,7 @@ export default function Culinary() {
         </div>
         <div className="flex gap-12 flex-col mt-24">
           {culinary.map((item, index) => (
-            <div className="flex gap-12 items-center" key={index}>
+            <div className="flex md:gap-12 items-center md:flex-row flex-col gap-6 hover:bg-gray-50 rounded-xl cursor-pointer md:p-1 p-2" key={index}>
               <img src={item.photo} className="w-[500px] rounded-md"/>
               <div className="flex flex-col justify-start w-full gap-2">
                 <p className="text-3xl font-extrabold" style={{ transform: 'scaleY(1.1)' }}>{item.name}</p>
@@ -26,7 +26,7 @@ export default function Culinary() {
       <div className="relative w-full flex justify-center items-center">
         <iframe 
           src="/assets/Boost Bisnis Lokal.pdf" 
-          className="w-full max-w-3xl h-[700px] border rounded-lg shadow-lg"
+          className="w-full md:max-w-3xl md:h-[700px] border rounded-lg shadow-lg h-[500px]"
         >
         </iframe>
       </div>
@@ -34,7 +34,7 @@ export default function Culinary() {
         <a 
           href="/assets/Boost Bisnis Lokal.pdf" 
           download="Boost_Bisnis_Lokal.pdf"
-          className="w-[20%] flex justify-center items-center bg-dark_green text-lime_yellow font-bold py-3 px-6 rounded-lg shadow-md hover:opacity-80 text-center"
+          className="md:w-[20%] w-[50%] flex justify-center items-center bg-dark_green text-lime_yellow font-bold py-3 px-6 rounded-lg shadow-md hover:opacity-80 text-center"
         >
           Download PDF
         </a>
@@ -44,7 +44,7 @@ export default function Culinary() {
           <h2 className="text-6xl font-extrabold">TEMUKAN RESTORAN DI PULAU TIDUNG</h2>
           <p className="text-xl">Sedang mencari hidangan laut segar, kafe tepi pantai yang nyaman, atau mungkin camilan lokal yang lezat? Pulau Tidung memiliki semuanya!</p>
         </div>
-        <div className="grid grid-cols-4 gap-5 mt-3">
+        <div className="grid md:grid-cols-4 gap-5 mt-3 grid-cols-2">
             {restaurants?.map((item, index) => (
               <div className="border-2 border-gray-100 rounded-md hover:border-black shadow-sm">
                 <img src={item.photo} className="w-full h-[200px]"/>

@@ -6,19 +6,19 @@ export default function index() {
     <>
         <Navbar />
         <div className="flex flex-col gap-20">
-          <div className="relative w-[100%] h-[20%]">
-            <video src="/assets/pulau-payung-video.mp4"  className="w-full h-full object-cover" muted autoPlay onEnded={(e) => e.target.play()}/>
-            <div className="absolute inset-0 flex flex-col items-start justify-center px-20 py-10 gap-10">
-              <p className="text-white font-extrabold text-7xl w-[50%]" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)' }}>
+          <div className="relative w-[100%] md:h-[20%] h-[40%]">
+              <img src="/assets/pulau-payungHD3.jpeg" className="w-full h-full object-cover"/>
+            <div className="absolute inset-0 flex flex-col items-start justify-center md:px-20 px-9 py-10 md:gap-10 gap-3">
+              <p className="text-white font-extrabold md:text-7xl md:w-[50%] text-3xl" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)' }}>
                 PULAU PAYUNG
               </p>
-              <p className="text-white font-semibold text-2xl w-[50%]">
+              <p className="text-white font-semibold md:text-2xl md:w-[50%] text-xs w-[80%]">
               Sebuah surga tersembunyi di Kepulauan Seribu! Nikmati keindahan pantai berpasir putih, snorkeling di terumbu karang yang memukau, dan suasana tenang yang cocok untuk melepas penat. Pengalaman baru dan petualangan seru menanti di setiap sudut pulau ini!
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-12 p-20">
-            <h2 className="text-5xl font-extrabold">WAHANA YANG BISA DICOBA DI PULAU PAYUNG</h2>
+          <div className="flex flex-col gap-12 md:p-20 p-9">
+            <h2 className="md:text-5xl font-extrabold text-2xl">WAHANA YANG BISA DICOBA DI PULAU PAYUNG</h2>
             <div className="flex flex-col gap-5">
               <div className="rounded-lg bg-dark_green p-8 shadow-md flex gap-15">
                 <div className="flex flex-col gap-5">

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import "tailwindcss/tailwind.css"
 import { FaSearch } from "react-icons/fa"
 import { useRouter } from "next/router"
-import { GiIsland } from "react-icons/gi"
+import { CiMenuBurger } from "react-icons/ci";
 
 const Navbar = () => {
   const router = useRouter()
@@ -30,13 +30,12 @@ const Navbar = () => {
   }
 
   return (
-    <div className="py-5 px-7 md:flex items-center justify-between relative z-99 fixed top-0 left-0">
+    <div className="py-5 px-7 flex flex-row items-center justify-between relative z-99 fixed top-0 left-0">
       <h1 className="font-bold text-2xl flex-1 flex gap-1 font-playfair items-center text-green cursor-pointer" onClick={() => router.push("/")}>
-        <GiIsland className="text-green-500"/>   
-        <p className="text-dark_green">Eksplor Tidung</p>
+        <img src="/assets/eksplortidung-logo.png" className="w-[30px] h-[30px]"/>
+        <img src="/assets/eksplortidung-title-final.png" className="w-[200px] h-[30px]"/>
         </h1>
-      <div className="flex gap-3 flex=4 relative text-dark_green">
-
+      <div className="flex gap-3 relative text-dark_green md:flex hidden md:block">
       <div
           className="relative"
           onMouseEnter={() => setHoveredItem("profile")}
@@ -166,7 +165,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex-1 flex justify-end items-center gap-5">
+      <div className="flex-1 flex md:flex justify-end items-center gap-5 md:block hidden">
         <button
           className="font-bold rounded-xl p-2 bg-dark_green text-lime_yellow"
           onClick={() => setLanguage(language === "Indonesia" ? "English" : "Indonesia")}
@@ -174,6 +173,9 @@ const Navbar = () => {
           {language === "Indonesia" ? "ENG" : "INA"}
         </button>
         <FaSearch className="text-xl text-dark_green" />
+      </div>
+      <div className="md:hidden block">
+          <CiMenuBurger className="text-dark_green font-semibold"/>
       </div>
     </div>
   )
