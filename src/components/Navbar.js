@@ -39,7 +39,7 @@ const Navbar = () => {
 
       <div
           className="relative"
-          onMouseEnter={() => setHoveredItem("destinations")}
+          onMouseEnter={() => setHoveredItem("profile")}
           onMouseLeave={() => setHoveredItem(null)}
         >
           <p

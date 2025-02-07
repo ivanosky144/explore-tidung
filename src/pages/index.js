@@ -116,7 +116,7 @@ export default function index() {
         </div>
         <div className="relative w-[100%] h-[15%]">
           <img src="/assets/article-photo1.jpeg" className="w-full h-full object-cover opacity-70" />
-          <div className="absolute inset-0 bg-green-900 opacity-50"></div>
+          <div className="absolute inset-0 bg-[#3D5D6C] opacity-50"></div>
           <form className="absolute inset-0 flex flex-col items-start justify-center px-20 py-10 gap-10">
             <p className="text-white font-black text-5xl w-[80%]" style={{ textShadow: '2px 2px 5px rgba(0, 0, 0, 0.3)', transform: 'scaleY(1.1)' }}>
               SUARA ANDA UNTUK PULAU TIDUNG YANG LEBIH BAIK

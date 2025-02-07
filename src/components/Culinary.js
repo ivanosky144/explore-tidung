@@ -1,10 +1,6 @@
 import { culinary, restaurants } from "@/data/culinary";
-import { useState } from "react";
-import HTMLFlipBook from "react-pageflip";
 
 export default function Culinary() {
-
-  const [option, setOption] = useState();
 
 
   return (
@@ -33,6 +29,15 @@ export default function Culinary() {
           className="w-full max-w-3xl h-[700px] border rounded-lg shadow-lg"
         >
         </iframe>
+      </div>
+      <div className="w-full flex justify-center">
+        <a 
+          href="/assets/Boost Bisnis Lokal.pdf" 
+          download="Boost_Bisnis_Lokal.pdf"
+          className="w-[20%] flex justify-center items-center bg-dark_green text-lime_yellow font-bold py-3 px-6 rounded-lg shadow-md hover:opacity-80 text-center"
+        >
+          Download PDF
+        </a>
       </div>
       <div>
         <div className="flex flex-col gap-3">

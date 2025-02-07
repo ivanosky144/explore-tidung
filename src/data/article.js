@@ -5,13 +5,15 @@ export const article = [
         writer: "Mutiara Maharani",
         photo: "/assets/article-photo1.jpeg",
         theme: "Wisata",
+        link: "explore-tidung.vercel.app/article"
       },
       {
         title: "Mahasiswa KKN UGM Angkat Potensi Wisata Masyarakat Pulau Tidung lewat Festival Reggae",
         content: "Festival Reggae telah menjadi tradisi masyarakat Pulau Tidung, Kepulauan Seribu, dalam merayakan penghujung tahun 2024. Mahasiswa Kuliah Kerja Nyata Pembelajaran Pengabdian Masyarakat Universitas Gadjah Mada (KKN-PPM UGM) bersama masyarakat menggelar Festival Reggae pada malam tahun baru 2025, Selasa (31/12). Acara ini sekaligus menjadi ajang mempererat silaturahmi antara mahasiswa dan masyarakat dalam program pengabdian KKN-PPM UGM.\n\nAliran musik reggae merupakan salah satu genre favorit masyarakat Pulau Tidung. Festival ini menghadirkan sejumlah musisi dan seniman reggae, termasuk Sejedewe, Dhyo Haw, Rafi Gimbal, D’Blow, OWL Jam, dan lainnya. Tahun ini, bintang utama Festival Reggae adalah Rasta Ressy, grup musik reggae yang mulai merintis sejak 2022. Dengan keunikan dan nuansa otentiknya, Festival Reggae selalu menjadi acara yang paling ditunggu-tunggu setiap tahunnya.\n\nMahasiswa KKN-PPM UGM turut berkontribusi dengan membantu Kelompok Sadar Wisata (Pokdarwis) Pulau Tidung. Bagas, salah satu anggota tim KKN dan penanggung jawab mahasiswa dalam Festival Reggae, mengaku senang terlibat dalam pembuatan gapura festival. “Pembuatan gapura ini memakan waktu tiga hari. Kami merancang desainnya, lalu dalam proses pembuatannya dibantu oleh teman-teman KKN lainnya serta berkolaborasi dengan Pokdarwis,” ujar Bagas dalam keterangannya kepada wartawan, Rabu (8/1).\n\nSelain Bagas, Sarwindah—anggota tim KKN lainnya—diberikan kepercayaan sebagai pembawa acara Festival Reggae. Kesempatan ini menjadi pengalaman berharga baginya. “Sangat menyenangkan, saya bisa melihat budaya lokal berpadu dengan suasana pulau. Antusiasme masyarakat juga sangat tinggi,” tuturnya.",
         writer: "Abdillah Ramadhani",
         photo: "/assets/festival.jpg",
-        theme: "Budaya & Sejarah"
+        theme: "Budaya & Sejarah",
+        link: "https://ugm.ac.id/id/berita/mahasiswa-kkn-ugm-angkat-potensi-wisata-masyarakat-pulau-tidung-lewat-festival-reggae/"
       },
         {
             title: "Potensi Daerah RW 4 Kelurahan Pulau Tidung, Kepulauan Seribu",
