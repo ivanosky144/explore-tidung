@@ -1,0 +1,13 @@
+504089290 public/assets/pulau-payung-video.MP4
+77290751 public/assets/jembatan-cinta-video.MP4
+11593220 public/assets/Boost Bisnis Lokal.pdf
+6989501 public/assets/tidung-dance.JPG
+6686891 public/assets/festival.JPG
+5144385 public/assets/sunset-tree.JPG
+3934647 public/assets/tidung-above.JPG
+2791941 public/assets/jembatan-cintaHD.jpg
+2420810 public/assets/jembatan-cintaHD2.jpg
+1269010 public/assets/makam-pulau-tidung.jpeg
+1097063 public/assets/pulau-payungHD2.jpeg
+
+git filter-branch --force --tree-filter 'rm -rf public/assets/pulau-payung-video.MP4' --prune-empty -- --all
